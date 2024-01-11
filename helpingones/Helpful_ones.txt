@@ -14,3 +14,7 @@ cheatsheet for display different symbols in Html
 
 cheatsheet for display different emojis in Html
       https://www.w3schools.com/html/html_emojis.asp
+
+
+color palette
+            rgb(167, 0, 0);
