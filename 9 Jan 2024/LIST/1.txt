@@ -1,0 +1,45 @@
+        ul a{
+            color: black;
+            /* background-color: rgb(158, 236, 158); */
+            padding:10px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Bahnschrift SemiBold';
+            overflow: hidden;
+            border: 10%;
+        }
+        li{
+            
+            display: block;
+            padding: 18px;
+            background-color: rgb(154, 218, 255);
+            width:auto;
+            max-width: 100%;
+            float:left;
+            
+           
+            
+        }
+        li:hover{
+            background-color:black;
+            color: white;
+         
+            
+            transition: 800ms;
+        }
+       
+        li:hover a{
+
+           
+            color: white;
+ 
+            transition: 800ms;
+
+        }
+   
+ 
+        p{
+            background-color:  rgb(158, 236, 158);
+            width: 100%;
+        }

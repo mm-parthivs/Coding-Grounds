@@ -1,0 +1,62 @@
+h1{
+color:white;
+text-align: center;
+font-family: 'Microsoft New Tai Lue';
+}
+body{background-color: rgba(39, 39, 39, 0.637);
+}
+input{
+    text-align: center;
+    border-color: white;
+    border-radius: 6px;
+    background-color:  rgba(39, 39, 39, 0.637);
+    height:30px;
+    color: white;
+}
+input:hover{
+
+    background-color:  rgba(83, 83, 83, 0.637) ;
+}
+
+label{
+    color: white;
+    font-family: 'Microsoft New Tai Lue';
+}
+form{
+    padding: 50px;
+    margin: auto;
+}
+#submit{
+    color: white;
+    background-color: black;
+   border-color: black;
+    font-size: 20px;
+    text-align: center;
+    padding:10px;
+    height:35px
+
+    
+}
+#submit:hover{
+    border-radius: 10px;
+    background-color: black;
+    
+    transition: 600ms;
+
+}
+legend{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+   
+}
+fieldset{
+    padding: 40px;
+    border:3px white dashed;
+}
+#fname,#lname,#mail,#pswrd{
+    width: 100%;
+}
+div{
+    text-align: center;
+}
