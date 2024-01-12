@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textshadow</title>
+    <link rel="icon" href="dragonimg.jpg" type="icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <style>
+        p {
+            text-transform: capitalize;
+            /* color:white; */
+            word-spacing: 5px;
+            line-height: 50px;
+            font-weight: bold;
+            text-decoration: underline 2px;
+            font-size: 2vw;
+            font-family: "Sofia", sans-serif;
+
+            background: white;
+            /* white-space: nowrap; */
+            text-shadow: 2px 2px 5px rgb(255, 73, 240), -2px -2px 5px rgb(0, 119, 255), 2px -2px 5px rgb(5, 255, 5);
+        }
+
+        .cssicon {
+
+            height: 50px;
+            width: 50px;
+            transition: 700ms;
+            padding: 5vw;
+        }
+
+        .cssicon:hover {
+
+            transition: 700ms;
+            height: 70px;
+            ;
+            width: 70px;
+            padding: auto;
+        }
+
+        div.mainclass {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            text-align: center;
+            @media (max-width:400px) {
+                grid-template-columns: 50% 50%;
+
+            }
+            @media (max-width:150px) {
+                grid-template-columns: 100%;
+            }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <ol  type="upper-roman"><li>REHDFGHD</li>
+        <li>FHFGH</li>
+        <li>SDHSH</li>
+            </ol>
+        <div class="mainclass">
+            <div>
+                <img width="50" height="50" class="cssicon" src="https://img.icons8.com/ios-filled/50/css.png" alt="css"
+                    title="CSS" />
+
+            </div>
+            <div>
+                <img class="cssicon" src="https://img.icons8.com/tiny-color/100/code.png" alt="code" />
+
+            </div>
+            <div>
+                <img width="50" height="50" class="cssicon" src="https://img.icons8.com/material-sharp/50/bootstrap.png"
+                    alt="bootstrap" />
+            </div>
+            <div><img width="50" class="cssicon" height="50" src="https://img.icons8.com/color-glass/50/bootstrap.png"
+                    alt="bootstrap" /></div>
+            <div><img width="50" class="cssicon" height="50" src="https://img.icons8.com/material/50/css3.png"
+                    alt="css3" /></div>
+            <div><img width="480" height="480" class="cssicon"
+                    src="https://img.icons8.com/material/480/linkedin--v1.png" alt="linkedin--v1" /></div>
+     
+        </div>
+
+    </div>
+
+</body>
+
+</html>

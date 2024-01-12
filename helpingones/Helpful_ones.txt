@@ -18,3 +18,18 @@ cheatsheet for display different emojis in Html
 
 color palette
             rgb(167, 0, 0);
+
+What are Web Safe Fonts?
+Web safe fonts are fonts that are universally installed across all browsers and devices.
+
+
+Fonts 
+verdana
+tahoma
+
+google fonts
+href="https://fonts.googleapis.com/css?family=Lemon"
+font-family:"Lemon"
+
+Using Multiple Google fonts with effects
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
