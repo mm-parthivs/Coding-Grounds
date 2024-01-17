@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+.menu{
+ 
+    display:inline-block;
+    position: relative;
+}
+        .dropdown {
+            display: none;
+            position:relative;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            width:100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            /* padding: 12px 16px; */
+            z-index: 1;
+            color: rgb(161, 2, 2);
+            text-align: center;
+
+        }
+
+        .menu:hover .dropdown {
+            display: inline-block;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+       
+
+        }
+
+        li {
+         
+            float: right;
+            font-size: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        this webpage is made to experiment on dropdown css
+    </h1>
+    <div class="menu">
+        <p>
+            dropdown menu
+        </p>
+        <div class="dropdown">
+            <ul>
+                <li>about us</li>
+                <li>login</li>
+                <li>News</li>
+            </ul>
+        </div>
+        
+    </div>
+    <div>
+        
+    </div>
+</body>
+
+</html>

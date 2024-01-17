@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+
+        ol{
+            counter-reset:section;
+            list-style-type: none;
+        }
+        li::before{
+            counter-increment: section;
+            content:"Section " counters(section,".") ;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>lion</li>
+        <li>lion</li>
+        <li>lion</li>
+        <li>lion</li>
+        <ol>
+            <li>tiger</li>
+            <li>tiger</li>
+            <ol>
+                <li>zebra</li>
+                <li>zebra</li>
+                <li>zebra</li>
+                <li>zebra</li>
+            </ol>
+            <li>tiger</li>
+            <li>tiger</li>
+        </ol>
+        <li>lion</li>
+    </ol>
+</body>
+</html>
