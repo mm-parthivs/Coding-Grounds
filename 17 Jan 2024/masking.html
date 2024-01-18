@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masking
+
+    </title>
+    <style>
+        img{
+            background-size: cover;
+            height:600px;
+            width:1000px;
+        }
+    </style>
+</head>
+<body>
+    <svg height="600px" width="600px">
+        <mask id="mask1">
+            <polygon fill="black" points="300 0,0 600 ,600 600"></polygon>
+        </mask>
+        <!-- <img src="backiee-260672-landscape.jpg" alt="background image" mask="url(#mask1)"> -->
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="backiee-260672-landscape.jpg" mask="url(#mask1)"></image>
+    </svg>
+</body>
+</html>
