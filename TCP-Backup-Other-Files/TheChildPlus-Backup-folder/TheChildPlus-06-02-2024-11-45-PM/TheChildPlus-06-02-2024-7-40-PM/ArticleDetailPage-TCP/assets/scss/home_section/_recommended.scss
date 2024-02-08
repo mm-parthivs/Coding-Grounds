@@ -1,0 +1,56 @@
+.recommended-section--wrapper{
+    margin: 20px 0;
+    position: relative;
+    @include media("<sm")    {
+        margin: 20px 0 0;
+    }
+    .swiper-nav-pagination{
+        position: absolute;
+        top: 6px;
+        right: 22px;
+        width: 90px;
+        height: 32px;
+        border-radius: 100px;
+        background: linear-gradient(85deg, #358EFC 0%, #01E1FD 100%);
+        @include media("<md"){
+            display: none;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            width: 24px;
+            height: 24px;
+            top: calc(50% + 9px);
+            color: $black;
+            &:after{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.recommended-slider-content--wrapper{
+    position: relative;
+    .c-section-title--wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 120px;
+        @include media("<md"){
+            justify-content: center;
+            padding-right: 8px;
+        }
+        .r-s-counter{
+            display: flex;
+            align-items: center;
+            color: $grey;
+            font-size: 16px;
+            font-family: $primaryFont;
+            font-weight: 400;
+            @include media("<md"){
+                display: none;
+            }
+            .r-s-digit{
+                color: $secondaryblue;
+                margin: 0 5px;
+            }
+        }
+    }
+}

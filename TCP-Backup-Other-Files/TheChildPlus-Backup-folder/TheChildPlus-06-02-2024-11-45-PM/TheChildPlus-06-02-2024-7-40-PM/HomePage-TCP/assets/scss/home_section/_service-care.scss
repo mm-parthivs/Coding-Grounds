@@ -1,0 +1,112 @@
+.service-and-care-wrapper {
+    font-family: Inter;
+    background-color: $primaryblue;
+    padding: 16px 0;
+    .sc-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 575px) {
+            flex-flow: wrap;
+            gap: 20px 0px;
+        }
+        .sc-contents {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+
+            @media (max-width: 1024px) {
+                width: 25%;
+            }
+            @media (max-width: 575px) {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                align-items: center;
+                width: 49%;
+            }
+            .icon-box {
+                width: 64px;
+                height: 64px;
+                @media (max-width: 575px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .service-type {
+                color: $white;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 0 !important;
+                @media (max-width: 1024px) {
+                    text-align: center;
+
+                    font-size: 14px;
+                }
+                @media (max-width: 575px) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.welcome-child-plus-wrapper {
+    font-family: Inter;
+    padding: 20px 0;
+    .about-us-section {
+        // text-align: center;
+        .child-plus-title {
+            // position:sticky ;
+            color: $primaryblue;
+            font-family: Inter;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+            margin-bottom: 25px;
+            .small-title {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+            @media (max-width: 575px) {
+                font-size: 24px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .about-us-image {
+            height: 400px;
+            margin-bottom: 20px;
+            @media (max-width: 1000px) {
+                height: 300px;
+            }
+
+            img {
+                object-fit: cover;
+            }
+        }
+        .about-us-detail {
+            .child-plus-para {
+                color: $lightblack;
+                
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                @media (max-width: 575px) {
+                    color: #303030;
+                    font-family: Inter;
+                    font-size: 14px;
+                    text-align: justify;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

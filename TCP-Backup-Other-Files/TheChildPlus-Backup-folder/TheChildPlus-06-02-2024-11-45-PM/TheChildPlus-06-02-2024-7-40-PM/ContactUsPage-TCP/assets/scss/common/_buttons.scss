@@ -1,0 +1,117 @@
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 600;
+    box-sizing: border-box;
+    width: 204px;
+    border-radius: 0;
+    &.quater-radius {
+        border-radius: 10px;
+    }
+    &.half-radius {
+        border-radius: 100px;
+    }
+    @media (max-width: 575px) {
+        font-size: 15px;
+        font-weight: 400;
+        width: 134px;
+        padding: 10px;
+        // margin-bottom: 8px;
+    }
+}
+
+.btn-blue {
+    background: $primaryblue;
+    color: $white;
+    &:hover {
+        background: $primaryblue;
+        color: $white;
+    }
+}
+
+.btn-white {
+    background: $white;
+    color: $lightblack;
+    &:hover {
+        background: $white;
+        color: $lightblack;
+    }
+}
+#login-btn-link {
+    padding-bottom: 4px;
+}
+.login-btn {
+    padding: 3px;
+    outline: 0;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#fdde5c),
+        color-stop(#f8ab5e),
+        color-stop(#f56a62),
+        color-stop(#a176c8),
+        color-stop(#759beb),
+        color-stop(#65beb3),
+        to(#70db96)
+    );
+    background: linear-gradient(to right, #fdde5c, #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3, #70db96);
+    // border-radius: 30px;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    @media (max-width:575px) {
+        padding: 2px;
+        
+    }
+}
+
+.login-btn > span {
+    display: block;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    background: white;
+    // border-radius: 30px;
+    @media (max-width: 720px) {
+        font-weight: 600;
+        padding: 5px 2px;
+                width: 80px;
+                font-size: 9px;}
+    @media (max-width: 576px) {
+                padding: 5px 2px;
+                width: 50px;
+                font-size: 9px;}
+}
+// #login-btn{
+//     padding: 10px 4px;
+//     font-size: 15px;
+//     line-height: 16px;
+//     font-weight: 600;
+//     box-sizing: border-box;
+//     width: 70px;
+//     border-radius: 5px;
+//     &.quater-radius {
+//         border-radius: 10px;
+//     }
+//     &.half-radius {
+//         border-radius: 100px;
+//     }
+//     @media (max-width: 576px) {
+//         padding: 5px 2px;
+//         width: 50px;
+//         font-size: 10px;
+//     }
+// }
+#navbarClose,
+#navbarIcon {
+    box-shadow: 0 0 0;
+    outline: none;
+    border: none;
+}
+#navbarIcon:focus {
+    box-shadow: 0 0 0;
+}

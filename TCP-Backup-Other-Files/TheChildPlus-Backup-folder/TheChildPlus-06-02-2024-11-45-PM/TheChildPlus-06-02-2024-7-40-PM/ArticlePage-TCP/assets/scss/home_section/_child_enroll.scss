@@ -1,0 +1,88 @@
+.wrapper{
+
+
+.child-enroll-wrapper {
+    font-family: Inter;
+    position: relative;
+    background-color: $green;
+    // padding: 25px;
+    padding: 35px 0 15px 0;
+    @media (max-width: 575px) {
+        padding: 15px 0 5px 0;
+       
+    }
+    .child-enroll-contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     
+        .child-enroll-content-l {
+            .child-enroll-title {
+                color: $white;
+                font-size: 38px;
+                font-weight: 600;
+                // line-height: normal;
+                margin-bottom: 16px;
+                @media (max-width: 1024px) {
+                    font-size: 31px;
+                }
+                @media (max-width: 575px) {
+                   
+                    font-size: 20px;
+                   
+                }
+            }
+            .child-enroll-para {
+                color: $white;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: normal;
+                text-align: center;
+                margin-bottom: 0;
+                @media (max-width: 575px) {
+                    display: none;
+                }
+            }
+        }
+        .btn-find-more {
+            color: $lightblack;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: normal;
+            background: $white;
+            padding: 16px;
+            width: 219px;
+            
+                @media (max-width: 575px) {
+                    font-size: 15px;
+                    font-weight: 800;
+                    width: 134px;
+                    padding: 10px;
+                    margin-bottom: 8px;
+                }   
+            
+
+        }
+        @media (max-width: 575px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+@media (max-width:375px){
+    flex-direction: column;
+    gap: 20px;
+}
+
+    }
+}
+
+#zigzag-green{
+    position: absolute;
+    width:100%;
+    height:auto;
+    top:99.2%;
+    left: 0px;;
+
+
+
+}
+}

@@ -1,0 +1,121 @@
+.leaderboard-section--wrapper{
+    margin: 10px 0 20px;
+    padding: 10px 0;
+    @include media("<sm"){
+        margin: 10px 0;
+    }
+    .c-section-title--wrapper{
+        margin-bottom: 20px;
+        @include media("<md"){
+            margin-bottom: 10px;
+        }
+    }
+    .leaderboard-image--wrapper{
+        height: 310px;
+        @include media("<md"){
+            height: 200px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .leaderboard-rank--wrapper{
+        margin: 0;
+        padding: 10px;
+        background: $darkBlue;
+        border-radius: 10px;
+        @include media("<md"){
+            background: transparent;
+            margin: 20px 0 0;
+        }
+        .l-r-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            + .l-r-item{
+                margin-top: 18px;
+            }
+            .l-game-info{
+                display: flex;
+                align-items: center;
+            }
+            &:first-child{
+                .rank-number{
+                    .l-r-digit{
+                        background-color: $pink;
+                    }
+                }
+            }
+            &:nth-child(2){
+                .rank-number{
+                    .l-r-digit{
+                        background-color: $purple;
+                    }
+                }
+            }
+            &:nth-child(3){
+                .rank-number{
+                    .l-r-digit{
+                        background-color: $ternaryblue;
+                    }
+                }
+            }
+            &:nth-child(4){
+                .rank-number{
+                    .l-r-digit{
+                        background-color: $primarylightblue;
+                    }
+                }
+            }
+            &:nth-child(5){
+                .rank-number{
+                    .l-r-digit{
+                        background-color: $lightblue;
+                    }
+                }
+            }
+        }
+        .rank-number{
+            width: 42px;
+            height: 42px;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 50%;
+            border: 2px solid $white;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .l-r-digit{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                font-size: 24px;
+            }
+        }
+        .l-game-name{
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 100%;
+            font-size: 14px;
+            margin: 0 0 0 11px;
+        }
+        .l-amount{
+            font-size: 16px;
+            color: $white;
+            font-weight: 500;
+            padding: 5px 20px;
+            background: $lightblue;
+            border-radius: 100px;
+            line-height: normal;
+        }
+    }
+}

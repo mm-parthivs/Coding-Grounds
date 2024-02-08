@@ -1,0 +1,74 @@
+@font-face {
+    font-family: SF Pro Display,sans-serif;
+    src: url("../../fonts/FontsFree-Net-SF-Pro-Rounded-Thin.ttf");
+    src: url("../../fonts/FontsFree-Net-SFProText-Regular.ttf");
+    src: url("../../fonts/FontsFree-Net-SFProText-Regular-1.ttf");
+    src: url("../../fonts/FontsFree-Net-SFProText-Medium-1.ttf");
+    src: url("../../fonts/FontsFree-Net-SFProText-Semibold-1.ttf");
+    src: url("../../fonts/FontsFree-Net-SFProText-Bold-1.ttf");
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//LIB
+
+// Font Awesome
+// @import "../lib/fontawesome/font-awesome.min.css";
+
+// Import Bootstrap 5.2.3
+@import url("../lib/bootstrap/css/bootstrap.min.css");
+
+// Swiper slider
+@import url("../lib/swiper/css/swiper-bundle.min.css");
+
+// Datepicker
+@import url("../lib/datepicker/css/datepicker.css");
+
+// select2
+@import url("../lib/select2/css/select2.min.css");
+
+//font awesome
+// @import "../lib/fontawesome/fontawesome.scss";
+// @import "../lib/fontawesome/solid.scss";
+// @import "../lib/fontawesome/brands.scss";
+
+
+// Media
+@import "common/include-media";
+
+// Import Global files
+@import "common/variables";
+
+@import "common/forms";
+@import "common/buttons";
+
+// Custom file
+@import "common/custom";
+
+//Home page
+@import "home_section/header";
+@import "home_section/footer";
+@import "home_section/home_banner";
+@import "home_section/service-care";
+@import "home_section/child_enroll";
+@import "home_section/team_slider";
+@import "home_section/parent-love-slider";
+@import "home_section/photo-gallery";
+@import "home_section/subscribe_section";
+
+//Mobile menu
+@import "home_section/mobile-menu";
+
+//Blog page
+
+@import "inner_pages/_blog.scss";
+
+//article detail page
+@import "inner_pages/article-detail";
+
+//contact-us page
+@import "inner_pages/contact-us"
