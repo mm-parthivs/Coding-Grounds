@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom on hover</title>
+    <style>
+        .wrapper {
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: aliceblue;
+
+
+
+
+
+
+        }
+
+
+        .test-img-wrapper {
+            width: 400px;
+            height: 600px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgb(115, 115, 115);
+        }
+
+        .test-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 0.2s ease-in-out;
+            filter: grayscale(100%);
+            display: block;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p id="id1" class="text">fgdfagdfgdf</p>
+        <section class="test-img-wrapper">
+            <img class="test-img" src="Colorful-Mountains-Scenery-iPhone-Wallpaper-4K.jpg" alt="landscape">
+        </section>
+        <button type="button" onclick="document.getElementsByClassName('test-img')[0].style.filter = 'none',height = '50%'">ADD life
+            to it</button>
+        <!-- <button type="button" onclick="document.getElementById('id1').style.color = 'red'">
+            Click Me!</button> -->
+    </div>
+
+    <script>
+        // document.getElementByClassName('test-img').style.height = "100%";
+    </script>
+</body>
+
+</html>
