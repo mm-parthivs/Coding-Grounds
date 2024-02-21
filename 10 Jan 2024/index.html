@@ -6,52 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoom on hover</title>
     <style>
-        .wrapper {
+        .container {
             height: 1000px;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            background-color: aliceblue;
-
-
-
-
-
 
         }
 
-
-        .test-img-wrapper {
+        .box {
+            position: relative;
             width: 400px;
             height: 600px;
             overflow: hidden;
             border-radius: 20px;
             box-shadow: 0 0 30px rgb(115, 115, 115);
-            transform-style: preserve-3d;
+
+
         }
 
-        .test-img {
+        .imgbx {
+            position: relative;
             height: 100%;
             width: 100%;
-            object-fit: cover;
-            transition: all 0.2s ease-in-out;
-            filter: grayscale(100%);
-            display: block;
-            background-color: aliceblue;
 
         }
 
-        .test-img-wrapper:hover .test-img {
-          
+        .images {
             transition: all 0.2s ease-in-out;
             filter: none;
-
-
+            object-fit: cover;
         }
 
-        .text-block {
-            
+
+
+        .content-box {
             background-color: black;
             color: white;
             padding-left: 20px;
@@ -60,31 +50,33 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
-        .test-img-wrapper:hover .text-block {
-            
             transform: translateZ(10px);
         }
+
+        /* .test-img-wrapper:hover .text-block {
+
+         
+          
+            /* Adjusted transform property */
+        /* }
+       */
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-
-        <section class="test-img-wrapper" data-tilt data-tilt-reverse="False" data-tilt-perspective="1300"
-            data-tilt-transition="true">
-            <img class="test-img" src="Colorful-Mountains-Scenery-iPhone-Wallpaper-4K.jpg" alt="landscape">
-            <div class="text-block">
-                <h4>Nature</h4>
-                <p>What a beautiful sunrise</p>
+    <div class="container">
+        <div class="box">
+            <div class="imgbx">
+                <img class="images" src="Colorful-Mountains-Scenery-iPhone-Wallpaper-4K.jpg" alt="landscape">
+                <!-- <div class="content-box">
+                    <h4>Nature</h4>
+                    <p>What a beautiful sunrise</p>
+                </div> -->
             </div>
-        </section>
-
-        <!-- <button type="button" onclick="document.getElementById('id1').style.color = 'red'">
-            Click Me!</button> -->
+        </div>
     </div>
 
-    <script src="vanilla-tilt.js"></script>
+    <!-- <script src="vanilla-tilt.js"></script> -->
 </body>
 
 </html>
